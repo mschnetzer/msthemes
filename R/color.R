@@ -21,3 +21,10 @@ msc_palette <- c("#d03161","#ee8080","#bfd8d1","#178a94","#2b374b")
 msc_pal <- function() { scales::manual_pal(msc_palette) }
 scale_color_mscool <- function(...) { discrete_scale("colour", "mscool", msc_pal(), ...) }
 scale_fill_mscool <- function(...) { discrete_scale("fill", "mscool", msc_pal(), ...) }
+
+# Seastar palette
+mss_palette <- c("#ea8e71","#cecbb4","#8badaa","#5d8198","#515365")
+mss_pal <- function() { scales::manual_pal(mss_palette) }
+scale_color_mssea <- function(...) { discrete_scale("colour", "mssea", mss_pal(), ...) }
+scale_fill_mssea <- function(...) { discrete_scale("fill", "mssea", mss_pal(), ...) }
+
