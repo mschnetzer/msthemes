@@ -57,11 +57,12 @@ theme_ms_line <- function (
   mst <- theme_bw(base_family=base_family, base_size=base_size) %+replace%
     theme(
       plot.title = element_text(family="MinionPro-BoldCapt",hjust=0, face="bold", size = 18),
-      plot.subtitle = element_text(hjust=0, size=12, margin=margin(5,0,5,0)),
+      plot.subtitle = element_text(hjust=0, size=12, margin=margin(10,0,5,0)),
       plot.caption = element_text(hjust=1,size = 7),
       axis.ticks = element_blank(),
       legend.background = element_blank(),
       legend.key = element_blank(),
+      legend.text=element_text(size=9),
       panel.background = element_blank(),
       panel.border = element_blank(),
       strip.background = element_blank(),
@@ -70,7 +71,7 @@ theme_ms_line <- function (
       )
 
   if (grid == TRUE) {
-    mst <- mst + theme(panel.grid.minor=element_blank())
+    mst <- mst + theme(panel.grid.major=element_line(size=0.2),panel.grid.minor=element_blank())
   } else {
     mst <- mst + theme(panel.grid=element_blank())
   }
