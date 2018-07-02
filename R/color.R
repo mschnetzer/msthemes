@@ -15,3 +15,9 @@ msl_palette <- c("#278ecf","#4bd762","#ff7b65","#ffca1f")
 msl_pal <- function() { scales::manual_pal(msl_palette) }
 scale_color_mslight <- function(...) { discrete_scale("colour", "mslight", msl_pal(), ...) }
 scale_fill_mslight <- function(...) { discrete_scale("fill", "mslight", msl_pal(), ...) }
+
+# Cool palette (e.g. for bar plots)
+msc_palette <- c("#d03161","#ee8080","#bfd8d1","#178a94","#2b374b")
+msc_pal <- function() { scales::manual_pal(msc_palette) }
+scale_color_mscool <- function(...) { discrete_scale("colour", "mscool", msc_pal(), ...) }
+scale_fill_mscool <- function(...) { discrete_scale("fill", "mscool", msc_pal(), ...) }
