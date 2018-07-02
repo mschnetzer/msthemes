@@ -17,7 +17,7 @@ theme_ms_scatter <- function (
 {
   mst <- theme_bw(base_family=base_family, base_size=base_size) %+replace%
     theme(
-      plot.title = element_text(hjust=0, face="bold", size = 18),
+      plot.title = element_text(family="MinionPro-BoldCapt",hjust=0, face="bold", size = 18),
       plot.subtitle = element_text(hjust=0, size=12, margin=margin(5,0,5,0)),
       plot.caption = element_text(hjust=1,size = 7),
       axis.ticks = element_blank(),
@@ -56,7 +56,7 @@ theme_ms_line <- function (
 {
   mst <- theme_bw(base_family=base_family, base_size=base_size) %+replace%
     theme(
-      plot.title = element_text(hjust=0, face="bold", size = 18),
+      plot.title = element_text(family="MinionPro-BoldCapt",hjust=0, face="bold", size = 18),
       plot.subtitle = element_text(hjust=0, size=12, margin=margin(5,0,5,0)),
       plot.caption = element_text(hjust=1,size = 7),
       axis.ticks = element_blank(),
