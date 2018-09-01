@@ -47,7 +47,8 @@ theme_ms <- function (
   if (dark == TRUE) {
     mst <- mst +
       theme(plot.background=element_rect(fill=bgdark,color=bgdark),
-            text=element_text(color="white")
+            text=element_text(color="white"),
+            strip.text=element_text(color="white")
             )
   } else {
     mst <- mst
