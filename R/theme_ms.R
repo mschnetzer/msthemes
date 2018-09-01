@@ -30,6 +30,7 @@ theme_ms <- function (
       panel.background = element_blank(),
       panel.border = element_blank(),
       strip.background = element_blank(),
+      strip.text=element_text(hjust=0),
       plot.background = element_blank(),
       complete = TRUE
       )
