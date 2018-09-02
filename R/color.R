@@ -11,7 +11,7 @@ scale_color_msdark <- function(...) { discrete_scale("colour", "msdark", msd_pal
 scale_fill_msdark <- function(...) { discrete_scale("fill", "msdark", msd_pal(), ...) }
 
 # Few light (e.g. for bar plots with labels)
-msl_palette <- c("#278ecf","#4bd762","#ff7b65","#ffca1f")
+msl_palette <- c("#ee4035","#f37736","#fdf498","#7bc043","#0392cf")
 msl_pal <- function() { scales::manual_pal(msl_palette) }
 scale_color_mslight <- function(...) { discrete_scale("colour", "mslight", msl_pal(), ...) }
 scale_fill_mslight <- function(...) { discrete_scale("fill", "mslight", msl_pal(), ...) }
