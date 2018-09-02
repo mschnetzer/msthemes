@@ -10,9 +10,9 @@ A custom ggplot2 theme
 
 `theme_ms()` calls the theme in a ggplot environment. The options are
 
-| `grid` | Whether grid is printed or not: `default=TRUE`|
-| `dark` | Switch color scheme to dark: `default=FALSE`|
-| `alttf` | Choose alternative title font (Playfair Display, https://fonts.google.com/specimen/Playfair+Display): `default=FALSE`|
+`grid`  Whether grid is printed or not: `default=TRUE`
+`dark`  Switch color scheme to dark: `default=FALSE`
+`alttf` Choose alternative title font (Playfair Display, https://fonts.google.com/specimen/Playfair+Display): `default=FALSE`
 
 ## Color palettes
 
