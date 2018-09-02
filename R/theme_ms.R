@@ -6,6 +6,7 @@
 #' @param
 #' grid Whether grid is printed or not, default=TRUE
 #' dark Switch color scheme to dark, default=FALSE
+#' alttf Choose alternative title font (Playfair Display)
 #' @export
 #' @examples
 #'
@@ -13,13 +14,13 @@
 theme_ms <- function (
   base_family="IBMPlexSans", base_size=12,
   grid=TRUE,
-  dark=FALSE
+  dark=FALSE,
+  alttf=FALSE
 )
 
 {
   mst <- theme_bw(base_family=base_family, base_size=base_size) %+replace%
     theme(
-      plot.title = element_text(family="MinionPro-BoldCapt",hjust=0, face="bold", size = 18),
       plot.subtitle = element_text(hjust=0, size=12, margin=margin(10,0,5,0)),
       plot.caption = element_text(hjust=1,size = 7),
       axis.ticks = element_blank(),
@@ -53,6 +54,13 @@ theme_ms <- function (
             )
   } else {
     mst <- mst
+  }
+
+  # ALTERNATIVE TITLE FONT
+  if (alttf == TRUE) {
+    mst <- mst + theme(plot.title = element_text(family="Playfair Display",hjust=0, size = 18))
+  } else {
+    mst <- mst + theme(plot.title = element_text(family="MinionPro-BoldCapt",hjust=0,face="bold",size = 18))
   }
 
   mst
