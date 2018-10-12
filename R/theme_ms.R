@@ -21,7 +21,7 @@ theme_ms <- function (
 {
   mst <- theme_bw(base_family=base_family, base_size=base_size) %+replace%
     theme(
-      plot.subtitle = element_text(hjust=0, size=12, margin=margin(10,0,5,0)),
+      plot.subtitle = element_text(hjust=0, size=12, margin=margin(3,0,5,0)),
       plot.caption = element_text(hjust=1,size = 7),
       axis.ticks = element_blank(),
       legend.background = element_blank(),
