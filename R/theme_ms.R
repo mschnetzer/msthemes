@@ -21,7 +21,8 @@ theme_ms <- function (
 {
   mst <- theme_bw(base_family=base_family, base_size=base_size) %+replace%
     theme(
-      plot.subtitle = element_text(hjust=0, size=12, margin=margin(3,0,5,0)),
+      plot.title = element_text(hjust=0, size = 18),
+      plot.subtitle = element_text(hjust=0, size=12, margin=margin(8,0,5,0)),
       plot.caption = element_text(hjust=1,size = 7),
       axis.ticks = element_blank(),
       legend.background = element_blank(),
@@ -58,9 +59,9 @@ theme_ms <- function (
 
   # ALTERNATIVE TITLE FONT
   if (alttf == TRUE) {
-    mst <- mst + theme(plot.title = element_text(family="Playfair Display",hjust=0, size = 18))
+    mst <- mst + theme(plot.title = element_text(family="Playfair Display"))
   } else {
-    mst <- mst + theme(plot.title = element_text(family="MinionPro-BoldCapt",hjust=0,face="bold",size = 18))
+    mst <- mst + theme(plot.title = element_text(family="MinionPro-BoldCapt",face="bold"))
   }
 
   mst
