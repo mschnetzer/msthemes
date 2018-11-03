@@ -1,7 +1,7 @@
 Package: msthemes
 Type: Package
 Title: Custom ggplot2 themes
-Version: 0.1.0
+Version: 0.2.0
 Author: Matthias Schnetzer
 Maintainer: Matthias Schnetzer <matthias.schnetzer@akwien.at>
 Description: Custom light-weight ggplot2 theme for personal use.
