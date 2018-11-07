@@ -29,7 +29,7 @@ scale_color_mssea <- function(...) { discrete_scale("colour", "mssea", mss_pal()
 scale_fill_mssea <- function(...) { discrete_scale("fill", "mssea", mss_pal(), ...) }
 
 # Pastel rainbow palette
-msp_palette <- c("#a8e6cf","#dcedc1","#ffd3b6","#ffaaa5","#ff8b94")
+msp_palette <- c("#ff8b94","#ffaaa5","#ffd3b6","#dcedc1","#a8e6cf","cadetblue4")
 msp_pal <- function() { scales::manual_pal(msp_palette) }
 scale_color_mspastel <- function(...) { discrete_scale("colour", "mspastel", msp_pal(), ...) }
 scale_fill_mspastel <- function(...) { discrete_scale("fill", "mspastel", msp_pal(), ...) }
