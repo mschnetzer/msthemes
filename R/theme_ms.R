@@ -52,7 +52,8 @@ theme_ms <- function (
       theme(plot.background=element_rect(fill=bgdark,color=bgdark),
             text=element_text(color="white"),
             strip.text=element_text(color="white"),
-            axis.text = element_text(color="white")
+            axis.text = element_text(color="white"),
+            legend.text = element_text(color="white")
             )
   } else {
     mst <- mst
